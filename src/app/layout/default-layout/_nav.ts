@@ -15,12 +15,12 @@ export const navItems: INavData[] = [
     name: 'Theme'
   },
   {
-    name: 'Colors',
+    name: 'Cobros',
     url: '/theme/colors',
     iconComponent: { name: 'cil-drop' }
   },
   {
-    name: 'Typography',
+    name: 'Ventas',
     url: '/theme/typography',
     linkProps: { fragment: 'headings' },
     iconComponent: { name: 'cil-pencil' }
@@ -30,7 +30,7 @@ export const navItems: INavData[] = [
     title: true
   },
   {
-    name: 'Base',
+    name: 'Inhumados',
     url: '/base',
     iconComponent: { name: 'cil-puzzle' },
     children: [
@@ -112,7 +112,7 @@ export const navItems: INavData[] = [
     ]
   },
   {
-    name: 'Buttons',
+    name: 'Inventario',
     url: '/buttons',
     iconComponent: { name: 'cil-cursor' },
     children: [
@@ -134,7 +134,7 @@ export const navItems: INavData[] = [
     ]
   },
   {
-    name: 'Forms',
+    name: 'Recursos Humanos',
     url: '/forms',
     iconComponent: { name: 'cil-notes' },
     children: [
@@ -181,7 +181,7 @@ export const navItems: INavData[] = [
     ]
   },
   {
-    name: 'Charts',
+    name: 'Reportes',
     iconComponent: { name: 'cil-chart-pie' },
     url: '/charts'
   },
