@@ -1,15 +1,130 @@
-<p>payment-link works!</p>
-<form cForm>
-    <div class="mb-3">
-      <label cLabel for="exampleFormControlInput1">Email address</label>
-      <input cFormControl
-             id="exampleFormControlInput1"
-             placeholder="name@example.com"
-             type="email"
-      />
-    </div>
-    <div class="mb-3">
-      <label cLabel for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea cFormControl id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-  </form>
+<!-- <p>payment-link works!</p> -->
+
+
+
+<c-row ngPreserveWhitespaces>
+  <c-col xs="12" xl="10">
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>Link de pago para el contrato M09-102102</strong>
+      </c-card-header>
+      <c-card-body>
+
+
+
+
+        <form cForm>
+
+
+
+          <!-- Payment Information -->
+  
+
+          <c-row>
+            <c-col xs="6">
+
+              <div class="mb-3">
+                <label cLabel for="cardNumber">Número de tarjeta</label>
+                <input cFormControl id="cardNumber" type="text" placeholder="Enter card number" />
+              </div>
+            </c-col>
+            <c-col xs="3">
+              <div class="mb-3">
+                <label cLabel for="expirationMonth">Mes de expiración</label>
+                <input cFormControl id="expirationMonth" type="text" placeholder="MM" />
+              </div>
+            </c-col>
+            <c-col xs="3">
+
+            <div class="mb-3">
+              <label cLabel for="expirationYear">Año de expiración</label>
+              <input cFormControl id="expirationYear" type="text" placeholder="YYYY" />
+            </div>
+          </c-col>
+
+          </c-row>
+  
+          <!-- <div class="mb-3">
+            <label cLabel for="cardType">Card Type</label>
+            <input cFormControl id="cardType" type="text" placeholder="Visa/MasterCard/etc." />
+          </div> -->
+          <select aria-label="Card select " cSelect>
+            <option>Tipo de tarjeta</option>
+            <option value="1">Visa</option>
+            <option value="2">Master Card</option>
+            <option value="3">Amex</option>
+          </select>
+        
+        
+        
+          <div class="mb-3">
+            <label cLabel for="totalAmount">Cantidad a pagar</label>
+            <input cFormControl id="totalAmount" type="text" placeholder="Ingrese cantidad a pagar" />
+          </div>
+          <select aria-label="Default select example" cSelect>
+            <option>Moneda</option>
+            <option value="1">Lempira</option>
+            <option value="2">Dolar</option>
+            <option value="3">Euro</option>
+          </select>
+        
+        
+          <!-- Billing Information -->
+          <div class="mb-3">
+            <label cLabel for="billToFirstName">Billing First Name</label>
+            <input cFormControl id="billToFirstName" type="text" placeholder="Enter first name" />
+          </div>
+          <div class="mb-3">
+            <label cLabel for="billToLastName">Billing Last Name</label>
+            <input cFormControl id="billToLastName" type="text" placeholder="Enter last name" />
+          </div>
+          <div class="mb-3">
+            <label cLabel for="billToAddress1">Billing Address 1</label>
+            <input cFormControl id="billToAddress1" type="text" placeholder="Enter address line 1" />
+          </div>
+          <div class="mb-3">
+            <label cLabel for="billToLocality">Billing Locality</label>
+            <input cFormControl id="billToLocality" type="text" placeholder="Enter locality/city" />
+          </div>
+          <div class="mb-3">
+            <label cLabel for="billToPostalCode">Billing Postal Code</label>
+            <input cFormControl id="billToPostalCode" type="text" placeholder="Enter postal code" />
+          </div>
+          <div class="mb-3">
+            <label cLabel for="billToCountry">Billing Country</label>
+            <input cFormControl id="billToCountry" type="text" placeholder="Enter country" />
+          </div>
+        
+        
+        
+          <!-- Shipping Information -->
+        
+          <div class="mb-3">
+            <label cLabel for="shipToFirstName">Shipping First Name</label>
+            <input cFormControl id="shipToFirstName" type="text" placeholder="Enter first name" />
+          </div>
+          <div class="mb-3">
+            <label cLabel for="shipToLastName">Shipping Last Name</label>
+            <input cFormControl id="shipToLastName" type="text" placeholder="Enter last name" />
+          </div>
+          <div class="mb-3">
+            <label cLabel for="shipToAddress1">Shipping Address 1</label>
+            <input cFormControl id="shipToAddress1" type="text" placeholder="Enter address line 1" />
+          </div>
+        
+        
+            <div class="mb-3">
+              <button cButton type="submit">Submit</button>
+            </div>
+          </form>
+
+
+
+
+
+
+      </c-card-body>
+    </c-card>
+  </c-col>
+</c-row>
+
