@@ -67,7 +67,8 @@ export const routes: Routes = [
         data: {
           title: 'Validation'
         }
-      }
+      },
+
     ]
   }
 ];
