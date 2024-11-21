@@ -6,7 +6,7 @@
   <c-col xs="12" xl="10">
     <c-card class="mb-4">
       <c-card-header>
-        <strong>Link de pago para el contrato M09-102102</strong>
+        <strong>Información del pago</strong>
       </c-card-header>
       <c-card-body>
 
@@ -25,22 +25,51 @@
 
               <div class="mb-3">
                 <label cLabel for="cardNumber">Número de tarjeta</label>
-                <input cFormControl id="cardNumber" type="text" placeholder="Enter card number" />
+                <input cFormControl id="cardNumber" type="text" placeholder="Ingrese el número de tarjeta" />
               </div>
             </c-col>
             <c-col xs="3">
               <div class="mb-3">
                 <label cLabel for="expirationMonth">Mes de expiración</label>
-                <input cFormControl id="expirationMonth" type="text" placeholder="MM" />
+                <input cFormControl id="expirationMonth" type="number" placeholder="MM" />
               </div>
             </c-col>
             <c-col xs="3">
 
             <div class="mb-3">
               <label cLabel for="expirationYear">Año de expiración</label>
-              <input cFormControl id="expirationYear" type="text" placeholder="YYYY" />
+              <input cFormControl id="expirationYear" type="number" placeholder="AAAA" />
             </div>
           </c-col>
+
+
+          <c-col xs="4">
+
+          <select aria-label="Card select " cSelect>
+            <option>Tipo de tarjeta</option>
+            <option value="1">Visa</option>
+            <option value="2">Master Card</option>
+            <option value="3">Amex</option>
+          </select>
+        </c-col>
+
+        
+        <c-col xs="4">
+
+          <div class="mb-3">
+            <!-- <label cLabel for="totalAmount">Cantidad a pagar</label> -->
+            <input cFormControl id="totalAmount" type="number" placeholder="Ingrese cantidad a pagar" />
+          </div>
+        </c-col>
+        <c-col xs="4">
+
+          <select aria-label="Default select example" cSelect>
+            <option value="1">Lempiras</option>
+            <option value="2">Dolares</option>
+            <option value="3">Euros</option>
+          </select>
+        </c-col>
+
 
           </c-row>
   
@@ -48,57 +77,88 @@
             <label cLabel for="cardType">Card Type</label>
             <input cFormControl id="cardType" type="text" placeholder="Visa/MasterCard/etc." />
           </div> -->
-          <select aria-label="Card select " cSelect>
-            <option>Tipo de tarjeta</option>
-            <option value="1">Visa</option>
-            <option value="2">Master Card</option>
-            <option value="3">Amex</option>
-          </select>
+
         
-        
-        
-          <div class="mb-3">
-            <label cLabel for="totalAmount">Cantidad a pagar</label>
-            <input cFormControl id="totalAmount" type="text" placeholder="Ingrese cantidad a pagar" />
-          </div>
-          <select aria-label="Default select example" cSelect>
-            <option>Moneda</option>
-            <option value="1">Lempira</option>
-            <option value="2">Dolar</option>
-            <option value="3">Euro</option>
-          </select>
-        
+        </form>
+
+      </c-card-body>
+    </c-card>
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>Información de facturación</strong>
+      </c-card-header>
+      <c-card-body>
+
+
+
+
+        <form cForm>
+
+
         
           <!-- Billing Information -->
+          <c-input-group>
+
+        <c-row>
+          <c-col xs="4">
+
           <div class="mb-3">
-            <label cLabel for="billToFirstName">Billing First Name</label>
-            <input cFormControl id="billToFirstName" type="text" placeholder="Enter first name" />
+            <label cLabel for="billToFirstName">Primer nombre</label>
+            <input cFormControl id="billToFirstName" type="text" placeholder="Ingrese nombre" />
           </div>
+        </c-col >
+        <c-col xs="4">
+
           <div class="mb-3">
-            <label cLabel for="billToLastName">Billing Last Name</label>
-            <input cFormControl id="billToLastName" type="text" placeholder="Enter last name" />
+            <label cLabel for="billToLastName">Apellido</label>
+            <input cFormControl id="billToLastName" type="text" placeholder="Ingrese apellido" />
           </div>
+        </c-col >
+        <c-col xs="4">
+
           <div class="mb-3">
-            <label cLabel for="billToAddress1">Billing Address 1</label>
-            <input cFormControl id="billToAddress1" type="text" placeholder="Enter address line 1" />
+            <label cLabel for="billToAddress1">Dirreción</label>
+            <input cFormControl id="billToAddress1" type="text" placeholder="Ingrese direección" />
           </div>
+        </c-col>
+        <c-col xs="4">
+
           <div class="mb-3">
-            <label cLabel for="billToLocality">Billing Locality</label>
-            <input cFormControl id="billToLocality" type="text" placeholder="Enter locality/city" />
+            <label cLabel for="billToLocality">Ciudad</label>
+            <input cFormControl id="billToLocality" type="text" placeholder="Ingrese municipio" />
           </div>
+        </c-col>
+        <c-col xs="4">
+
           <div class="mb-3">
-            <label cLabel for="billToPostalCode">Billing Postal Code</label>
-            <input cFormControl id="billToPostalCode" type="text" placeholder="Enter postal code" />
+            <label cLabel for="billToPostalCode">Código postal</label>
+            <input cFormControl id="billToPostalCode" type="text" placeholder="Ingrese código postal" />
           </div>
-          <div class="mb-3">
-            <label cLabel for="billToCountry">Billing Country</label>
+        </c-col>
+        <c-col xs="4">
+          <select aria-label="Default select example" cSelect>
+            <option value="1">Honduras</option>
+            <option value="2">Estados Unidos</option>
+            <option value="3">España</option>
+            <option value="4">Guatemala</option>
+            <option value="5">El Salvador</option>
+            <option value="6">México</option>
+
+          </select>
+          <!-- <div class="mb-3">
+            <label cLabel for="billToCountry">País</label>
             <input cFormControl id="billToCountry" type="text" placeholder="Enter country" />
-          </div>
+          </div> -->
+        </c-col> 
+
         
-        
-        
+        </c-row>
+      </c-input-group>
+
           <!-- Shipping Information -->
-        
+          <!-- <c-input-group>
+
+            <c-row>
           <div class="mb-3">
             <label cLabel for="shipToFirstName">Shipping First Name</label>
             <input cFormControl id="shipToFirstName" type="text" placeholder="Enter first name" />
@@ -116,6 +176,31 @@
             <div class="mb-3">
               <button cButton type="submit">Submit</button>
             </div>
+
+
+          </c-row>
+        </c-input-group> -->
+          </form>
+
+
+
+
+
+
+      </c-card-body>
+    </c-card>
+    <c-card class="mb-4">
+      <c-card-header>
+        <strong>Revisión</strong>
+      </c-card-header>
+      <c-card-body>
+<form cForm>
+  <c-callout color="warning">
+Pago de letra 25/50 del contrato M09-202555 por L500.00
+ </c-callout>
+        <div class="mb-3">
+          <button cButton type="submit">Pagar</button>
+        </div>
           </form>
 
 
