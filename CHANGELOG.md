@@ -3,6 +3,36 @@
 
 ---
 
+#### `5.3.8`
+
+- chore(dependencies): update to `Angular 19.1`
+- fix(toast): narrow type for cToastClose
+
+---
+
+#### `5.3.4`
+
+- chore(dependencies): update
+- chore(dependencies): security patch for `path-to-regexp` ReDoS in 0.1.x
+- fix(toast.component): remove constructor-based dependency injection
+
+---
+
+#### `5.3.3`
+
+- chore(dependencies): update
+- chore(workflows): update node-version to 22.x
+
+---
+
+#### `5.3.2`
+
+- chore(dependencies): update 
+- chore(workflows): update with npm ci
+- fix(package-lock): rebuild
+
+---
+
 #### `5.3.1`
  
 - chore(dependencies): update to Angular 19
